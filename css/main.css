@@ -31,6 +31,8 @@ color: black;
 font-size: 16px;
 }
 
+.st0:hover {opacity:1;fill:#FFFFFF;}
+
 #icons{
   cursor: pointer;
   width: 30%;
@@ -42,11 +44,6 @@ font-size: 16px;
 }
 
 #svg-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 400px 400px;
-  grid-template-rows: 120px 120px 120px 120px;
-  justify-content: space-around;
   text-align: center;
 }
 
