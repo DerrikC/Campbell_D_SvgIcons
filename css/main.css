@@ -32,7 +32,6 @@ font-size: 16px;
 }
 
 #icons{
-  cursor: pointer;
   width: 30%;
 
 }
@@ -47,9 +46,12 @@ font-size: 16px;
   color: #ffff;
   border: 0;
   border-radius: 3px;
+  height: 10%;
+  width: 20%;
 }
 
 .button:hover{
+  cursor: pointer;
   background: grey;
 }
 
@@ -70,7 +72,7 @@ font-size: 16px;
   padding: 20px;
   width: 70%;
   font-size: 14px;
-  height: 25%;
+  height: 60%;
 }
 
 .close{
