@@ -1,6 +1,6 @@
 body{
   font-size: 32px;
-  font-family: futura, sans-serif, helvetica;
+  font-family: futura, arial, sans-serif, helvetica;
 }
 
 /* Beginning of classes and IDs */
@@ -31,8 +31,6 @@ color: black;
 font-size: 16px;
 }
 
-.st0:hover {opacity:1;fill:#FFFFFF;}
-
 #icons{
   cursor: pointer;
   width: 30%;
@@ -40,17 +38,68 @@ font-size: 16px;
 }
 
 #icons:hover {
-  width: 33%;
+  width: 40%;
+}
+
+
+.button{
+  background: black;
+  color: #ffff;
+  border: 0;
+  border-radius: 3px;
+}
+
+.button:hover{
+  background: grey;
+}
+
+.textboxBack{
+  display: none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.textboxContent{
+  background-color: white;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  font-size: 14px;
+  height: 25%;
+}
+
+.close{
+  color: grey;
+  float: right;
+  font-size: 30px;
+}
+
+.close:hover, .close:focus{
+  color: black;
+}
+
+.close{
+  cursor: pointer;
 }
 
 #svg-container {
   text-align: center;
 }
 
-
 #main-footer {
   width: 100%;
   height: 160px;
   background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: bottom;
 }
-/*inline SVG css styles*/
+
+
+/*inline SVG css styles*

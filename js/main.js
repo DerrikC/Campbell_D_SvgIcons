@@ -1,37 +1,25 @@
 (() =>{
-  console.log('fired!');
+  //this is a self invoking fucntion
+
 
   //select elements with JS
   //setting up a variable using the let keyword,
   //and using CSS selector to find the element we want to use
 
   //let stores the reference to element as  a variable (in memory)
+let textboxBack = document.querySelector('#mytextboxBack');
+iconButton = document.querySelector('#iconButton');
+closeBtn = document.querySelector('.close');
 
-  let svgGraphic = document.querySelector("#badgeSVG"),
-  mainHeadline = document.querySelector(".main-headline"),
-  subHead = document.querySelector("#raster-vector h3"),
-  swapTextButton = document.querySelector(".switch-type");
+function openModal() {
+  textboxBack.style.display = 'block';
+}
 
+function closeModal() {
+  textboxBack.style.display = 'none';
+}
 
-
-  //functions are reusable pieces of code that you can run any time
-
-  function logMyId() {
-    console.log(this.id);
-
-    this.style.opacity = 0.5;
-
-  }
-
-  function swapText(){
-    mainHeadline.textContent = "Now you're something else!!";
-    mainHeadline.classList.toggle("selected")
-    subHead.textContent = "You are also something else!";
-
-  }
-
-
-  svgGraphic.addEventListener("click",logMyId);
-  swapTextButton.addEventListener("click", swapText)
+iconButton.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal)
 
 })();
